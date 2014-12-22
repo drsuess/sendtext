@@ -6,8 +6,8 @@ if [ "${#NUM}" !=  "10" ]; then
 else
 	echo Now enter your message to send
 	read MESSAGE
+	echo Sent successfully!
 fi
 curl http://textbelt.com/text -d number=$NUM -d "message=$MESSAGE"
-echo Sent successfully!
 
 
